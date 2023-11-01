@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body{
+  font-family: 'Vazirmatn', sans-serif;
+  color: black;
+  font-size: 12px;
+
+}
+.swiper{
+  overflow: hidden;
+}
+p{
+  background-color: white;
+  color: gray;
+  width: 150px;
+  height: 35px;
+  margin: 2px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+p:hover{
+  color: black;
+  transition: 0.2s;
+  transform: scale(1.2);
+}
+h1 {
+  font-size: 1.4em;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+
+  font-size: 1em;
+  font-weight: 500;
+ 
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+li{
+  cursor: pointer;
+  font-size: 15px;
+}
+li:hover{
+  color: gray;
+}
+img{
+  object-fit: cover;
+  width: 100%;
+  height: 350px;
+  
+}
+img:hover{
+  
+  transition: 0.5s;
+ 
+}
+
+
+.swiper-button-prev,
+.swiper-button-next{
+  color: black;
+  z-index: 1000;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after{
+  font-size: 25px; 
+  font-weight: 1000;
+  z-index: 1000;
+
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  right: 2%;
+}
+.swiper-button-prev,
+.swiper-rtl  {  
+  left: 92%;
+}
+
+
+.swiper-pagination-bullet {
+  background: black;
+}
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+
+   bottom: 90px;
+   left: 70%;
+   height: 20px;
+  width: 50%;
+}
